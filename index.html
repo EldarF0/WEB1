@@ -39,61 +39,75 @@
        <li><a href="/form.html" target="_blank">Сокращенная на внутреннюю</a></li>     
       </ol>
         
-      <form action="/" method="POST">
+      
 
-	    <label>
-	        Введите имя<br>
-	        <input name="field-name-1" value="Name">
-	    </label><br>
+  <form action="/"
+    method="POST">
 
-	    <label>
-	        Введите email:<br>
-	        <input name="field-email" value="......@tuda-suda.com" type="email">
-	    </label><br>
+    <label>
+      Имя:<br />
+      <input name="field-name-1"
+        value="" 
+        placeholder="Введите ваше имя"/>
+    </label><br /><br />
 
-	    <label>
-	        Введите дату рождения<br>
-	        <input name="field-date" value="2022-02-22" type="date">
-	    </label><br>
+    <label>
+      E-mail:<br />
+      <input name="field-email"
+        type="email"
+        placeholder="Введите вашу почту" />
+    </label><br /><br />
 
-	    Введите пол:<br>
-	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-	        Мужской</label><br>
-	    <label><input type="radio" name="radio-group-1" value="Значение2">
-	        Женский</label><br>
+    <label>
+      Дата рождения:<br />
+      <input name="field-date"
+        value="2000-01-01"
+        type="date" />
+    </label><br /><br />
 
-	    Выберите кол-во конечностей:<br>
-	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-	        1</label>
-	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
-	        2</label>
-	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
-	        3</label>
-	    <label><input type="radio" name="radio-group-1" value="Значение4">
-	        4</label>
-	    <label><input type="radio" name="radio-group-1" value="Значениие 5">
-	        Больше 4х</label><br>
+    Пол:<br />
+    <label><input type="radio" checked="checked"
+      name="radio-group-1" value="Значение1" />
+      Мужской</label>
+    <label><input type="radio"
+      name="radio-group-1" value="Значение2" />
+      Женский</label><br /><br />
 
-	    <label>
-	        Сверхспособности:
-	        <br>
-	        <select name="field-name-4[]" multiple="multiple">
-	            <option value="Значение1">Бессмертие</option>
-	            <option value="Значение2" selected="selected">Левитация</option>
-	            <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
-	        </select>
-	    </label><br>
+      Количество конечностей:<br />
+    <label><input type="radio" checked="checked"
+      name="radio-group-2" value="Значение1" />
+      1</label>
+    <label><input type="radio"
+      name="radio-group-2" value="Значение2" />
+      2</label>
+      <label><input type="radio" checked="checked"
+      name="radio-group-2" value="Значение3" />
+      3</label>
+      <label><input type="radio" checked="checked"
+       name="radio-group-2" value="Значение4" />
+      4</label><br /><br />
 
-	    <label>
-	        Биография:
-	        <br>
-	        <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
-	    </label><br>
+      Сверхспособности:
+      <br />
+      <select name="field-name-4[]"
+        multiple="multiple">
+        <option value="Значение1">Бессмертие</option>
+        <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+        <option value="Значение3" selected="selected">Левитация</option>
+      </select>
+    <br /><br />
 
-	    <label><input type="checkbox" checked="checked" name="check-1">
-	        с контрактом ознакомлен (а)</label><br>
+    <label>
+      Биография:<br />
+      <textarea name="field-name-2">Расскажите о себе</textarea> 
+    </label><br /><br />
 
-	    <input type="submit" value="Отправить">
-	</form>
-    </body>
+      С контрактом ознакомлен (а):
+    <label><input type="checkbox" checked="checked"
+      name="check-1" />
+      </label><br /><br /> 
+    
+    <input type="submit" value="Отправить" />
+  </form>
+</body>
 </html>
